@@ -1,4 +1,4 @@
-require "url_resolver/version"
+require "url-resolver/version"
 
 module UrlResolver
   

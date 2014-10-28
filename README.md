@@ -1,13 +1,11 @@
-# UrlResolver
-
-TODO: Write a gem description
+# Url-Resolver
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'url_resolver'
+gem 'url-resolver'
 ```
 
 And then execute:
@@ -16,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install url_resolver
+    $ gem install url-resolver
 
 ## Usage
 
@@ -24,7 +22,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/url_resolver/fork )
+1. Fork it ( https://github.com/alexpchin/url-resolver/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

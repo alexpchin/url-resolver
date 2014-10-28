@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'url_resolver/version'
+require 'url-resolver/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "url_resolver"
+  spec.name          = "url-resolver"
   spec.version       = UrlResolver::VERSION
   spec.authors       = ["Alex Chin"]
   spec.email         = ["alex@alexchin.co.uk"]
