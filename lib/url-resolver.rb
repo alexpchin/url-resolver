@@ -2,18 +2,18 @@ require "url-resolver/version"
 
 module UrlResolver
   
-  def self.resolve(url=nil, short_url=nil)
+  def self.resolve(url=nil, path_to_resolve=nil)
     raise ArgumentError, "You need to provide a root url." if url.nil?
-    raise ArgumentError, "You need to provide a short url to resolve." if short_url.nil?
+    raise ArgumentError, "You need to provide a short url to resolve." if path_to_resolve.nil?
 
-    if !short_url.include?("http")     
-      if short_url.include?("//")
-        "http:#{short_url}"
+    if !path_to_resolve.include?("http")     
+      if path_to_resolve.include?("//")
+        "http:#{path_to_resolve}"
       else 
-        "#{url}#{short_url}"
+        "#{url}#{path_to_resolve}"
       end
     else
-      short_url
+      path_to_resolve
     end
   end
 

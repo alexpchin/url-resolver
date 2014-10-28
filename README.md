@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To resolve a partial file path use:
+
+```
+UrlResolver::resolve(url, path_to_resolve)
+```
 
 ## Contributing
 
