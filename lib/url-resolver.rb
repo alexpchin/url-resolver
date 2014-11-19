@@ -1,5 +1,5 @@
 require "url-resolver/version"
-require "pathname"
+require "uri"
 
 module UrlResolver
   
@@ -11,7 +11,7 @@ module UrlResolver
       if path_to_resolve.include?("//")
         "http:#{path_to_resolve}"
       else 
-        File.expand_path(path_to_resolve, url)
+        URI.join(url, path_to_resolve).to_s
       end
     else
       path_to_resolve
