@@ -3,9 +3,9 @@ require "uri"
 
 module UrlResolver
   
-  def self.resolve(url=nil, path_to_resolve=nil)
-    URI.join(url, path_to_resolve).to_s
-
+  def self.resolve(page_url, href)
+    URI.join(page_url, href).to_s
+    
     ## Deprecated
     # raise ArgumentError, "You need to provide a root url." if url.nil?
     # raise ArgumentError, "You need to provide a path to resolve." if path_to_resolve.nil?

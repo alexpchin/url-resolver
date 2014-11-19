@@ -81,7 +81,7 @@ Or install it yourself as:
 To resolve a partial file path use:
 
 ```
-UrlResolver.resolve(url, path_to_resolve)
+UrlResolver.resolve(page_url, href)
 ```
 
 ## Contributing
