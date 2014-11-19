@@ -3,7 +3,7 @@
 [![Test Coverage](https://codeclimate.com/github/alexpchin/url-resolver/badges/coverage.svg)](https://codeclimate.com/github/alexpchin/url-resolver)
 
 ## UPDATE
-I've noticed from this [stackoverflow article](http://stackoverflow.com/questions/4861517/getting-the-absolute-url-when-extracting-links) that you can actually use Ruby's URI library to manage paths:
+I've noticed from this [stackoverflow article](http://stackoverflow.com/questions/4861517/getting-the-absolute-url-when-extracting-links) that you can actually use Ruby's URI library to resolve paths:
 
 ```
 absolute_uri = URI.join(page_url, href).to_s
