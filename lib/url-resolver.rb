@@ -11,10 +11,7 @@ module UrlResolver
       if path_to_resolve.include?("//")
         "http:#{path_to_resolve}"
       else 
-        first = Pathname.new(url)
-        second = Pathname.new(path_to_resolve)
-        relative = second.relative_path_from first
-        first + relative
+        File.expand_path(path_to_resolve, url)
       end
     else
       path_to_resolve
