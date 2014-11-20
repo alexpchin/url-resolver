@@ -5,16 +5,16 @@ module UrlResolver
   
   def self.resolve(page_url, href)
     raise ArgumentError, "You need to provide a root url." if page_url.nil?
-    raise ArgumentError, "You need to provide a path to resolve." if path_to_resolve.nil?
+    raise ArgumentError, "You need to provide a path to resolve." if href.nil?
 
-    if !path_to_resolve.include?("http")     
-      if path_to_resolve.include?("//")
-        URI.join(page_url, "http:#{path_to_resolve}").to_s
+    if !href.include?("http")     
+      if href.include?("//")
+        URI.join(page_url, "http:#{href}").to_s
       else 
-        URI.join(page_url, path_to_resolve).to_s
+        URI.join(page_url, href).to_s
       end
     else
-      path_to_resolve
+      href
     end
   end
 
